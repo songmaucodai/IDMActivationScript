@@ -25,7 +25,7 @@ An open-source tool to activate and reset the trial of [Internet Download Manage
 
 -   Right-click on the Windows start menu and select PowerShell or Terminal (Not CMD).
 -   Copy-paste the below code and press enter\
-    `irm is.gd/ias_idm | iex`
+    `irm is.gd/active_idm | iex`
 -   You will see the activation options, follow the on-screen instructions.
 -   That's all.
 
