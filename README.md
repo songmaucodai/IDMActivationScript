@@ -1,11 +1,3 @@
-# Notice:
-
-## This project has been archived and is no longer being maintained.
-
-I've switched to FDM, don't want to keep up with IDM new nags anymore.
-
-------------------------------------------------------------------------
-
 ## IDM Activation Script
 
 An open-source tool to activate and reset the trial of [Internet Download Manager](https://www.internetdownloadmanager.com/)
@@ -17,11 +9,6 @@ An open-source tool to activate and reset the trial of [Internet Download Manage
 -   IDM trial reset
 -   Fully open source
 -   Based on the transparent batch script
-
-## IAS Latest Release
-
-Last Release - v1.2 (12-Feb-2024)\
-[GitHub](https://github.com/WindowsAddict/IDM-Activation-Script) - [BitBucket](https://bitbucket.org/WindowsAddict/idm-activation-script/)
 
 ## Download / How to use it?
 
@@ -44,7 +31,7 @@ Last Release - v1.2 (12-Feb-2024)\
 
 ### Method 2 - Traditional
 
--   Download the file from [GitHub](https://github.com/WindowsAddict/IDM-Activation-Script/archive/refs/heads/main.zip) or [Bitbucket](https://bitbucket.org/WindowsAddict/idm-activation-script/get/main.zip)
+-   Download the file from [GitHub](https://github.com/songmaucodai/IDMActivationScript/archive/refs/heads/main.zip)
 -   Right-click on the downloaded zip file and extract
 -   In the extracted folder, run the file named `IAS.cmd`
 -   You will see the activation options, and follow onscreen instructions.
@@ -90,57 +77,6 @@ Last Release - v1.2 (12-Feb-2024)\
 ## Troubleshoot
 
 -   Browser Integration Fix: [Chrome](https://www.internetdownloadmanager.com/register/new_faq/bi9.html) - [Firefox](https://www.internetdownloadmanager.com/register/new_faq/bi4.html)
--   Raise the issue on [Github](https://github.com/WindowsAddict/IDM-Activation-Script) with screenshots.
-
-## Changelog
-
-#### v1.2
-
--   Added back activation option with a randomized name, email, and key in registration details along with a warning that it's not working for some users, the recommended option is to use Freeze trial.
-
-#### v1.1
-
--   IDM update 6.42b3 has started showing fake serial popups with IAS activation, due to this we have removed the activation option and replaced it with the Freeze trial option to lock the 30-day trial period for the lifetime.
--   Now the script will disable quick-edit in CMD windows using Powershell instead of editing registry, thanks to @abbodi1406 for the code and @awuctl for the idea.
--   Code to relaunch script with conhost.exe to avoid terminal app is now merged in quick-edit disable code, thanks to @abbodi1406.
-
-#### v1.0
-
--   Added the code to relaunch the script with conhost.exe if the script is running from the terminal app.
--   Fixed an issue in getting the current user account SID.
-
-#### v0.9
-
--   Fixed an issue where the script can not activate and reset IDM in non-admin user accounts.
--   Fixed an issue where the script incorrectly shows that IDM is activated.
--   Fixed an issue where a fake serial pop-up may appear. The script will also show the info to run the activation option again without using the reset option.
--   Fixed an issue where Powershell code to launch IAS may not work due to GitHub block in some regions. It will use the new [BitBucket](https://bitbucket.org/WindowsAddict/idm-activation-script/) repo as a fallback link.
--   IDM registry scanning and locking code is now written in Powershell.
--   The script update checker code is added to the script.
--   The script will now disable quick edit mode temporarily because users often click inside the script window and it pauses the script.
--   The script will back up the CLSISD registry keys before performing operations on them.
--   Many error checks are added to better identify the issues.
-
-#### v0.8
-
--   Move the project to [Github](https://github.com/WindowsAddict/IDM-Activation-Script) and [massgrave.dev](https://massgrave.dev/idm-activation-script.html)
--   Minor bug fixes
--   Add info to inform users that empty registry keys are being deleted when the script deletes a lot of them
-
-## Screenshots
-
-![](https://massgrave.dev/images/IAS.png?raw=true)
-
-![](https://massgrave.dev/images/IAS_Freeze_Trial.png?raw=true)
-
-## Credits
-
-|                                             |                                                                                                                                                                                                                                        |
-|----------------------|--------------------------------------------------|
-| Dukun Cabul                                 | Original researcher of this IDM trial reset and activation logic, made an Autoit tool for these methods, [IDM-AIO_2020_Final](https://nsaneforums.com/topic/371047-discussion-internet-download-manager-fixes/page/8/#comment-1632062) |
-| AveYo aka BAU                               | [reg_own lean and mean snippet](https://pastebin.com/XTPt0JSC)                                                                                                                                                                         |
-| [abbodi1406](https://github.com/abbodi1406) | Help in coding                                                                                                                                                                                                                         |
-| WindowsAddict                               | IAS Author                                                                                                                                                                                                                             |
 
 And thanks to the IAS users for their interest, feedback, and assistance.
 
